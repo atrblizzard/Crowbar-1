@@ -493,6 +493,8 @@ Public Class SourceModel49
 
 		'TEST: When a model has a nameCopy, it seems to also use the VTF file strip group topology fields.
 		Dim vtxFile As New SourceVtxFile07(Me.theInputFileReader, Me.theVtxFileData, Me.theMdlFileData.nameCopyOffset > 0)
+		'DEBUG: Use the version check to prevent missing verts when using "Override MDL version" option on MDL v48 model.
+		'Dim vtxFile As New SourceVtxFile07(Me.theInputFileReader, Me.theVtxFileData, Me.theMdlFileData.version >= 49 AndAlso Me.theMdlFileData.nameCopyOffset > 0)
 
 		vtxFile.ReadSourceVtxHeader()
 		'TODO: Why is this "If" statement needed?
