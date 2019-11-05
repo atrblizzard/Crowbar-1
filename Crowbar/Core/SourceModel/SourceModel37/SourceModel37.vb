@@ -65,15 +65,15 @@ Public Class SourceModel37
 
 	Public Overrides ReadOnly Property HasLodMeshData As Boolean
 		Get
-			'If Not Me.theMdlFileData.theMdlFileOnlyHasAnimations _
-			'		 AndAlso Me.theMdlFileData.theBones IsNot Nothing _
-			'		 AndAlso Me.theMdlFileData.theBones.Count > 0 _
-			'		 AndAlso Me.theVtxFileData IsNot Nothing _
-			'		 AndAlso Me.theVtxFileData.lodCount > 0 Then
-			'	Return True
-			'Else
-			Return False
-			'End If
+			If Not Me.theMdlFileData.theMdlFileOnlyHasAnimations _
+					 AndAlso Me.theMdlFileData.theBones IsNot Nothing _
+					 AndAlso Me.theMdlFileData.theBones.Count > 0 _
+					 AndAlso Me.theVtxFileData IsNot Nothing _
+					 AndAlso Me.theVtxFileData.lodCount > 0 Then
+				Return True
+			Else
+				Return False
+			End If
 		End Get
 	End Property
 
@@ -400,7 +400,7 @@ Public Class SourceModel37
 			Me.thePhyFileDataGeneric = New SourcePhyFileData()
 		End If
 
-		Dim phyFile As New SourcePhyFile37(Me.theInputFileReader, Me.thePhyFileDataGeneric)
+		Dim phyFile As New SourcePhyFile(Me.theInputFileReader, Me.thePhyFileDataGeneric)
 
 		phyFile.ReadSourcePhyHeader()
 		If Me.thePhyFileDataGeneric.solidCount > 0 Then
