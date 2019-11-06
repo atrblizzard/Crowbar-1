@@ -1,5 +1,9 @@
 ﻿Public Class SourceMdlSequenceDesc37
 
+	Public Sub New()
+		Me.theWeightListIndex = -1
+	End Sub
+
 	'struct mstudioseqdesc_t
 	'{
 	'	int	szlabelindex;

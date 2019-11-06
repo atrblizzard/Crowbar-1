@@ -2089,7 +2089,7 @@ Public Class SourceQcFile37
 				Try
 					Me.WriteSequenceOptions(aSequenceDesc)
 				Catch ex As Exception
-					Dim debug As Integer = 4242
+					line = "// WARNING: Some options are missing due to problem writing one of the options."
 				End Try
 
 				line = "}"
@@ -2141,7 +2141,7 @@ Public Class SourceQcFile37
 
 			line = vbTab
 			line += """"
-			If name(0) = "@" Then
+			If name = "" OrElse name(0) = "@" Then
 				'NOTE: There should only be one implied anim desc.
 				impliedAnimDesc = anAnimationDesc
 				anAnimationDesc.theSmdRelativePathFileName = SourceFileNamesModule.CreateAnimationSmdRelativePathFileName(anAnimationDesc.theSmdRelativePathFileName, Me.theModelName, anAnimationDesc.theName)
