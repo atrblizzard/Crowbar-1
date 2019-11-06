@@ -765,7 +765,9 @@ Public Class SourcePhyFile
 		vector1.z = vertex(1).z - vertex(2).z
 
 		normalVector = vector0.CrossProduct(vector1)
-		normalVector = normalVector.Normalize()
+		If Not (normalVector.x = 0 AndAlso normalVector.y = 0 AndAlso normalVector.z = 0) Then
+			normalVector = normalVector.Normalize()
+		End If
 
 		Dim phyVertex As SourcePhyVertex
 		For vertexIndex As Integer = 0 To 2
