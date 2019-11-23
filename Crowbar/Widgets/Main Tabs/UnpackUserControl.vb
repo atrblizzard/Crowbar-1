@@ -129,6 +129,10 @@ Public Class UnpackUserControl
 			End While
 		End If
 
+		If TheApp.Settings.UnpackerIsRunning Then
+			Exit Sub
+		End If
+
 		Me.UpdateWidgets(True)
 		Me.PackageTreeView.Nodes(0).Text = "<refreshing>"
 		Me.PackageTreeView.Nodes(0).Nodes.Clear()
@@ -140,6 +144,7 @@ Public Class UnpackUserControl
 		'Me.CancelUnpackButton.Text = "Cancel Listing"
 		Me.CancelUnpackButton.Enabled = False
 		Me.UnpackerLogTextBox.Text = ""
+		Me.thePackageCount = 0
 
 		AddHandler TheApp.Unpacker.ProgressChanged, AddressOf Me.ListerBackgroundWorker_ProgressChanged
 		AddHandler TheApp.Unpacker.RunWorkerCompleted, AddressOf Me.ListerBackgroundWorker_RunWorkerCompleted
@@ -239,10 +244,10 @@ Public Class UnpackUserControl
 	'	Me.FindTextInPackageFiles(FindDirection.Next)
 	'End Sub
 
-	'Private Sub PackageTreeView_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles PackageTreeView.AfterSelect
-	'	Me.UpdateSelectionPathText()
-	'	Me.ShowFilesInSelectedFolder()
-	'End Sub
+	Private Sub PackageTreeView_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles PackageTreeView.AfterSelect
+		Me.UpdateSelectionPathText()
+		Me.ShowFilesInSelectedFolder()
+	End Sub
 
 	Private Sub PackageTreeView_ItemDrag(sender As Object, e As ItemDragEventArgs) Handles PackageTreeView.ItemDrag
 		If Me.PackageTreeView.SelectedNode IsNot Nothing Then
@@ -268,8 +273,9 @@ Public Class UnpackUserControl
 		'NOTE: This selects the node before dragging starts; otherwise dragging would use whatever was selected before the mousedown.
 		treeView.SelectedNode = clickedNode
 
-		Me.UpdateSelectionPathText()
-		Me.ShowFilesInSelectedFolder()
+		'Me.UpdateSelectionPathText()
+		'Me.ShowFilesInSelectedFolder()
+		Me.PackageListView.SelectedItems.Clear()
 	End Sub
 
 	''NOTE: Need this because listview item stays selected when selecting its parent folder.
@@ -436,6 +442,8 @@ Public Class UnpackUserControl
 			''Me.theEntryIndex = -1
 		ElseIf e.ProgressPercentage = 1 Then
 			Me.theEntryIndex = -1
+			Me.thePackageCount += 1
+			Me.UpdateContentsGroupBox()
 		ElseIf e.ProgressPercentage = 2 Then
 			Me.theArchivePathFileName = line
 		ElseIf e.ProgressPercentage = 3 Then
@@ -779,6 +787,14 @@ Public Class UnpackUserControl
 			End If
 		ElseIf TheApp.Settings.UnpackOutputFolderOption = UnpackOutputPathOptions.WorkFolder Then
 			FileManager.OpenWindowsExplorer(TheApp.Settings.UnpackOutputFullPath)
+		End If
+	End Sub
+
+	Private Sub UpdateContentsGroupBox()
+		If Me.thePackageCount > 1 Then
+			Me.ContentsGroupBox.Text = "Contents of " + Me.thePackageCount.ToString("N0") + " packages"
+		Else
+			Me.ContentsGroupBox.Text = "Contents of package"
 		End If
 	End Sub
 
@@ -1138,6 +1154,9 @@ Public Class UnpackUserControl
 		If resourceInfo.IsFolder Then
 			Dim selectedTreeNode As TreeNode
 			selectedTreeNode = Me.PackageTreeView.SelectedNode
+			If selectedTreeNode Is Nothing Then
+				selectedTreeNode = Me.PackageTreeView.Nodes(0)
+			End If
 			Me.PackageTreeView.SelectedNode = selectedTreeNode.Nodes(resourceInfo.Name)
 		Else
 			' Extract the file to the user's temp folder and open it as if it were opened in File Explorer.
@@ -1262,6 +1281,7 @@ Public Class UnpackUserControl
 	Private thePackEntries As List(Of Integer)
 	Private theGivenHardLinkFileName As String
 
+	Private thePackageCount As Integer
 	Private theArchivePathFileName As String
 	Private theEntryIndex As Integer
 

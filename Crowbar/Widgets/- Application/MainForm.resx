@@ -125,7 +125,7 @@
     <value>About Crowbar</value>
   </data>
   <data name="AboutCrowbarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="AboutCrowbarToolStripMenuItem1.Text" xml:space="preserve">
     <value>About Crowbar</value>
@@ -157,7 +157,7 @@
     <value>SetUpGamesUserControl1</value>
   </data>
   <data name="&gt;&gt;SetUpGamesUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.SetUpGamesUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.SetUpGamesUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SetUpGamesUserControl1.Parent" xml:space="preserve">
     <value>SetUpGamesTabPage</value>
@@ -208,7 +208,7 @@
     <value>DownloadUserControl1</value>
   </data>
   <data name="&gt;&gt;DownloadUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.DownloadUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.DownloadUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;DownloadUserControl1.Parent" xml:space="preserve">
     <value>DownloadTabPage</value>
@@ -262,7 +262,7 @@
     <value>UnpackUserControl1</value>
   </data>
   <data name="&gt;&gt;UnpackUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.UnpackUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.UnpackUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;UnpackUserControl1.Parent" xml:space="preserve">
     <value>UnpackTabPage</value>
@@ -313,7 +313,7 @@
     <value>PreviewViewUserControl</value>
   </data>
   <data name="&gt;&gt;PreviewViewUserControl.Type" xml:space="preserve">
-    <value>Crowbar.ViewUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.ViewUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;PreviewViewUserControl.Parent" xml:space="preserve">
     <value>PreviewTabPage</value>
@@ -364,7 +364,7 @@
     <value>DecompilerUserControl1</value>
   </data>
   <data name="&gt;&gt;DecompilerUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.DecompileUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.DecompileUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;DecompilerUserControl1.Parent" xml:space="preserve">
     <value>DecompileTabPage</value>
@@ -415,7 +415,7 @@
     <value>CompilerUserControl1</value>
   </data>
   <data name="&gt;&gt;CompilerUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.CompileUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.CompileUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CompilerUserControl1.Parent" xml:space="preserve">
     <value>CompileTabPage</value>
@@ -466,7 +466,7 @@
     <value>ViewViewUserControl</value>
   </data>
   <data name="&gt;&gt;ViewViewUserControl.Type" xml:space="preserve">
-    <value>Crowbar.ViewUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.ViewUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ViewViewUserControl.Parent" xml:space="preserve">
     <value>ViewTabPage</value>
@@ -517,7 +517,7 @@
     <value>PackUserControl1</value>
   </data>
   <data name="&gt;&gt;PackUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.PackUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.PackUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;PackUserControl1.Parent" xml:space="preserve">
     <value>PackTabPage</value>
@@ -568,7 +568,7 @@
     <value>PublishUserControl1</value>
   </data>
   <data name="&gt;&gt;PublishUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.PublishUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.PublishUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;PublishUserControl1.Parent" xml:space="preserve">
     <value>PublishTabPage</value>
@@ -622,7 +622,7 @@
     <value>OptionsUserControl1</value>
   </data>
   <data name="&gt;&gt;OptionsUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.OptionsUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.OptionsUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;OptionsUserControl1.Parent" xml:space="preserve">
     <value>OptionsTabPage</value>
@@ -673,7 +673,7 @@
     <value>HelpUserControl1</value>
   </data>
   <data name="&gt;&gt;HelpUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.HelpUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.HelpUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;HelpUserControl1.Parent" xml:space="preserve">
     <value>HelpTabPage</value>
@@ -724,7 +724,7 @@
     <value>AboutUserControl1</value>
   </data>
   <data name="&gt;&gt;AboutUserControl1.Type" xml:space="preserve">
-    <value>Crowbar.AboutUserControl, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.AboutUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;AboutUserControl1.Parent" xml:space="preserve">
     <value>AboutTabPage</value>
@@ -755,6 +755,57 @@
   </data>
   <data name="&gt;&gt;AboutTabPage.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="UpdateUserControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="UpdateUserControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="UpdateUserControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="UpdateUserControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 546</value>
+  </data>
+  <data name="UpdateUserControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;UpdateUserControl1.Name" xml:space="preserve">
+    <value>UpdateUserControl1</value>
+  </data>
+  <data name="&gt;&gt;UpdateUserControl1.Type" xml:space="preserve">
+    <value>Crowbar.UpdateUserControl, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpdateUserControl1.Parent" xml:space="preserve">
+    <value>UpdateTabPage</value>
+  </data>
+  <data name="&gt;&gt;UpdateUserControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UpdateTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="UpdateTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 546</value>
+  </data>
+  <data name="UpdateTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="UpdateTabPage.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;UpdateTabPage.Name" xml:space="preserve">
+    <value>UpdateTabPage</value>
+  </data>
+  <data name="&gt;&gt;UpdateTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpdateTabPage.Parent" xml:space="preserve">
+    <value>MainTabControl</value>
+  </data>
+  <data name="&gt;&gt;UpdateTabPage.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="MainTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3381,6 +3432,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Crowbar.BaseForm, Crowbar, Version=0.60.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Crowbar.BaseForm, Crowbar, Version=0.64.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
