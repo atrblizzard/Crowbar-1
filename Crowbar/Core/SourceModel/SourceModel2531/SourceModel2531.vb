@@ -413,7 +413,11 @@ Public Class SourceModel2531
 		mdlFile.ReadFlexControllers()
 		'NOTE: This must be after flex descs are read so that flex desc usage can be saved in flex desc.
 		mdlFile.ReadFlexRules()
+		mdlFile.ReadIkChains()
+		mdlFile.ReadMouths()
 		mdlFile.ReadPoseParamDescs()
+
+		mdlFile.ReadUnknownStructs()
 
 		mdlFile.ReadTextures()
 		mdlFile.ReadTexturePaths()
